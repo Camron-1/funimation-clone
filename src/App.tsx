@@ -1,10 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './components/PromoRibbon';
+import PromoRibbon from './components/PromoRibbon';
+import NavigationBar from './components/NavigationBar';
+import funimationLogo from './assets/funimation-logo.svg';
 
 function App() {
   return (
     <div className="App">
+      <PromoRibbon/>
+      <NavigationBar svgImage={funimationLogo} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,6 +25,9 @@ function App() {
           Learn React
         </a>
       </header>
+      
+
+      
     </div>
   );
 }

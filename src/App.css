@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+
+.promo-ribbon {
+  background-color: #410099;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.ribbon-text {
+  font-size:10px;
+  font-weight: bold;
+  display: block;
+  margin: 5px;
+}
+
+/* styles.css */
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.logo-container {
+  margin-right: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.menu-options {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
