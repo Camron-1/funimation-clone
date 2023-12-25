@@ -5,8 +5,11 @@ import './components/PromoRibbon';
 import PromoRibbon from './components/PromoRibbon';
 import NavigationBar from './components/NavigationBar';
 import funimationLogo from './assets/funimation-logo.svg';
+import FreeTrialBanner from './components/FreeTrialBanner';
+
 
 function App() {
+  const subscriptionBannerLink = './assets/home-subscription-banner.mp4';
   return (
     <div className="App">
       <PromoRibbon/>
@@ -25,6 +28,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <FreeTrialBanner mediaLink={subscriptionBannerLink} />
+     
       
 
       

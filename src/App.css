@@ -84,3 +84,52 @@
 .menu-item:last-child {
   margin-right: 0;
 }
+
+
+/* Banner.css */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.banner-container {
+  position: relative;
+}
+
+.video-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.main-banner {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sub-banner {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.start-trial-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5733; /* Change the color to your preference */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
