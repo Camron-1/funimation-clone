@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
       </div>
       <div>
         <div style={{ position: 'absolute', top: 1550, right: 0, maxHeight: '1000px', overflow: 'auto' }}>
-          <a href="./assets/instagram.svg" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/funimation" target="https://www.instagram.com/funimation" rel="noopener noreferrer">
             <img
               src={instagramImage}
               alt="Instagram Logo"
@@ -65,21 +65,21 @@ const Footer: React.FC = () => {
               style={{ width: '20px', height: '50px', marginRight: '10px' }}
             />
           </a>
-          <a href="./assets/twitter.svg" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/funimation" target="https://twitter.com/funimation" rel="noopener noreferrer">
             <img
               src={twitterImage}
               alt="Twitter Logo"
               style={{ width: '20px', height: '50px', marginRight: '10px' }}
             />
           </a>
-          <a href="./assets/youtube.svg" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/user/FUNimation" target="https://www.youtube.com/user/FUNimation" rel="noopener noreferrer">
             <img
               src={youtubeImage}
               alt="Youtube Logo"
               style={{ width: '20px', height: '50px', marginRight: '10px' }}
             />
           </a>
-          <a href="./assets/pinterest.svg" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.pinterest.com/funimation/" target="https://www.pinterest.com/funimation/nk" rel="noopener noreferrer">
             <img
               src={pinterestImage}
               alt="Pinterest Logo"
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
             />
 
           </a>
-          <a href="./assets/tiktok.svg" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.tiktok.com/@funimation" target="https://www.tiktok.com/@funimation" rel="noopener noreferrer">
             <img
               src={tiktokImage}
               alt="Tiktok Logo"
