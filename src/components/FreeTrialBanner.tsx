@@ -9,7 +9,7 @@ const FreeTrialBanner: React.FC<FreeTrialBannerProps> = ({ mediaLink }) => {
     <div className="banner-container">
       <video autoPlay loop muted className="video-banner">
         {/* Provide the path to your video file */}
-        <source src="src/assets/home-subscription-banner.mp4" type="video/mp4" />
+        <source src={mediaLink} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
