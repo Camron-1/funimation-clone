@@ -6,6 +6,7 @@ import PromoRibbon from './components/PromoRibbon';
 import NavigationBar from './components/NavigationBar';
 import funimationLogo from './assets/funimation-logo.svg';
 import FreeTrialBanner from './components/FreeTrialBanner';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -29,10 +30,7 @@ function App() {
         </a>
       </header>
       <FreeTrialBanner mediaLink={subscriptionBannerLink} />
-     
-      
-
-      
+      <Footer/>
     </div>
   );
 }

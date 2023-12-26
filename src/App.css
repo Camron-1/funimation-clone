@@ -87,11 +87,11 @@
 
 
 /* Banner.css */
-body {
+/* body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
+} */
 
 .banner-container {
   position: relative;
@@ -127,9 +127,43 @@ body {
 .start-trial-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff5733; /* Change the color to your preference */
+  background-color: #410099; /* Change the color to your preference */
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   border-radius: 5px;
 }
+
+
+/* Footer.css */
+.footer-container {
+  justify-content: flex-start; /* Ensure all content starts from the left */
+  padding: 20px;
+  background-color: #410099;
+  color: #fff;
+  text-align: left; /* Optional: Ensure text is left-aligned */
+  left:0px;
+  font-family: 'Helvetica', sans-serif
+}
+
+.footer-section {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-section a {
+  color: #fff; /* Adjust link color as needed */
+  text-decoration: none;
+}
+
+/* Additional styles for other elements if necessary */
