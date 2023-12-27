@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -45,7 +46,7 @@
 }
 
 .ribbon-text {
-  font-size:10px;
+  font-size: 10px;
   font-weight: bold;
   display: block;
   margin: 5px;
@@ -115,7 +116,8 @@
 
 .menu-icon {
   margin-right: 5px;
-  font-size: 20px; /* Adjust the font size as needed */
+  font-size: 20px;
+  /* Adjust the font size as needed */
 }
 
 /* Float Stream, Discover, and Shop to the left */
@@ -193,7 +195,8 @@
 .start-trial-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #410099; /* Change the color to your preference */
+  background-color: orange;
+  /* Change the color to your preference */
   color: #fff;
   text-decoration: none;
   font-size: 18px;
@@ -203,33 +206,57 @@
 
 /* Footer.css */
 .footer-container {
-  justify-content: flex-start; /* Ensure all content starts from the left */
+  justify-content: flex-start;
+  /* Ensure all content starts from the left */
   padding: 20px;
   background-color: #410099;
   color: #fff;
-  text-align: left; /* Optional: Ensure text is left-aligned */
-  left:0px;
+  text-align: left;
+  /* Optional: Ensure text is left-aligned */
+  left: 0px;
   font-family: 'Helvetica', sans-serif
 }
 
 .footer-section {
   max-width: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-section h2 {
   font-size: 15px;
   margin-bottom: 10px;
+  
 }
 
 .footer-section p {
   font-size: 14px;
   line-height: 1.5;
+  
 }
 
 .footer-section a {
-  color: #fff; /* Adjust link color as needed */
+  color: #fff;
+  /* Adjust link color as needed */
   text-decoration: none;
+  white-space: nowrap;
 }
+
+.crunchy-roll-title {
+  margin-left: 900px; /* Adjust the margin as needed */
+  white-space: nowrap;
+  height: 50
+}
+.picture-image img {
+  width: 50px; 
+  height: 30px ;
+  position: relative;
+  top: -35px;
+  margin-right: -50px;
+  float:right;
+  
+
+
+}
+
 
 /* Additional styles for other elements if necessary */
