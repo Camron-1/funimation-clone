@@ -7,16 +7,20 @@ interface HeaderBannerProps {
     buttonText: string;
 }
 
-const HeaderBanner: React.FC<HeaderBannerProps> = ({ bannerImage, bannerLogo , bannerText, buttonText }) => {
-  return (
-    <div className="header-banner-container">
-            <div className="header-banner-image">
+const HeaderBanner: React.FC<HeaderBannerProps> = ({ bannerImage, bannerLogo, bannerText, buttonText }) => {
+    return (
+        <div className="header-banner-section">
+            <div className="header-banner-container">
                 <img src={bannerLogo} alt="Banner Logo" className="logo" />
+                <div className="header-banner-image">
+                    <img src={bannerImage} alt="Banner Logo" className="logo" />
+                </div>
+                <div className="sub-banner">{bannerText}
+                    <a href="header-banner-button" className="header-banner-button">{buttonText}</a>
+                </div>
             </div>
-        <div className="sub-banner">{bannerText}</div>
-        <a href="header-banner-button" className="header-banner-button">{buttonText}</a>
-    </div>
-  );
+        </div>
+    );
 };
 
 export default HeaderBanner;

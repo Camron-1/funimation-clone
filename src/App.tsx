@@ -6,7 +6,7 @@ import PromoRibbon from './components/PromoRibbon';
 import NavigationBar from './components/NavigationBar';
 import funimationLogo from './assets/funimation-logo.svg';
 import bannerImage from './assets/one-piece-wallpaper.png';
-import bannerLogo from './assets/one-piece-wallpaper.png';
+import bannerLogo from './assets/one-piece-logo.png';
 import searchIcon from './assets/icon-search.svg';
 import FreeTrialBanner from './components/FreeTrialBanner';
 import Footer from './components/Footer';
