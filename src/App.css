@@ -225,13 +225,13 @@
 .footer-section h2 {
   font-size: 15px;
   margin-bottom: 10px;
-  
+
 }
 
 .footer-section p {
   font-size: 14px;
   line-height: 1.5;
-  
+
 }
 
 .footer-section a {
@@ -242,21 +242,71 @@
 }
 
 .crunchy-roll-title {
-  margin-left: 900px; /* Adjust the margin as needed */
+  margin-left: 900px;
+  /* Adjust the margin as needed */
   white-space: nowrap;
   height: 50
 }
+
 .picture-image img {
-  width: 50px; 
-  height: 30px ;
+  width: 50px;
+  height: 30px;
   position: relative;
   top: -35px;
   margin-right: -50px;
-  float:right;
-  
+  float: right;
+
 
 
 }
 
 
 /* Additional styles for other elements if necessary */
+
+
+.nav-bar-block {
+  overflow: hidden;
+  background-color: #F8F8F8;
+  background-size: cover;
+  display: block;
+  height: 75px;
+  width: 1100px;
+  margin-left: -500px;
+  transition: all 1s ease;
+}
+
+.nav-bar-block:hover {
+  height: 300px;
+}
+
+
+
+.nav-bar-menu li {
+  position: relative;
+}
+
+.nav-bar-menu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar-menu>li:hover>ul {
+  display: inline-block;
+
+}
+
+.nav-bar-menu a {
+  text-decoration: none;
+  color: purple;
+}
+
+.login {
+  margin-left: 900px;
+  position: relative;
+  top: -45px
+}
