@@ -53,29 +53,50 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ homeSvgImage, searchSvgIm
                     <ul className="nav-bar-menu">
 
                         <li><a href="https://www.funimation.com/shows/">Stream</a>
+
                             <ul>
-                                <li><a href="https://www.funimation.com/shows/">ALL TITLES</a></li>
-                                <li><a href="https://www.funimation.com/simuldubs/">CURRENT SEASON</a></li>
-                                <li><a href="https://www.funimation.com/schedule/">SCHEDULE</a></li>
+                                <div className='submenu'>
+                                    <div className="wrap">
+                                        <li><a href="https://www.funimation.com/shows/">ALL TITLES</a></li>
+                                    </div>
+                                    <div className="wrap">
+                                        <li><a href="https://www.funimation.com/simuldubs/">CURRENT SEASON</a></li>
+                                    </div>
+                                    <li><a href="https://www.funimation.com/schedule/">SCHEDULE</a></li>
+                                </div>
+
                             </ul>
                         </li>
                         <li><a href="https://www.funimation.com/discover/">Discover</a>
                             <ul>
-                                <li><a href="https://www.funimation.com/games/">GAMES</a></li>
-                                <li><a href="https://www.crunchyroll.com/news">NEWS</a></li>
-                                <li><a href="https://www.crunchyroll.com">THEATRICAL</a></li>
-
+                                <div className='submenu'>
+                                    <li><a href="https://www.funimation.com/games/">GAMES</a></li>
+                                    <li><a href="https://www.crunchyroll.com/news">NEWS</a></li>
+                                    <li><a href="https://www.crunchyroll.com">THEATRICAL</a></li>
+                                </div>
                             </ul>
                         </li>
                         <li><a href="https://store.crunchyroll.com">Shop</a>
                             <ul>
-                                <li><a href="https://store.crunchyroll.com">HOME VIDEO</a></li>
-                                <li><a href="https://store.crunchyroll.com/collections/all#/filter:ss_availability:Pre-Orders">PRE-ORDERS</a></li>
-                                <li><a href="https://store.crunchyroll.com">FIGURES & COLLECTIBLES</a></li>
-                                <li><a href="https://store.crunchyroll.com">ACCESSORIES</a></li>
-                                <li><a href="https://store.crunchyroll.com">APPAREL</a></li>
-                                <li><a href="https://store.crunchyroll.com">HOME GOODS</a></li>
-                                <li><a href="https://store.crunchyroll.com">GIFT CARDS</a></li>
+                                <div className='submenu'>
+                                    <div className="wrap">
+                                        <li><a href="https://store.crunchyroll.com">HOME VIDEO</a></li>
+                                    </div>
+                                    <li><a href="https://store.crunchyroll.com/collections/all#/filter:ss_availability:Pre-Orders">PRE-ORDERS</a></li>
+                                    <div className="wrap">
+                                        <li><a href="https://store.crunchyroll.com">FIGURES & COLLECTIBLES</a></li>
+                                    </div>
+                                    <div className="wrap">
+                                        <li><a href="https://store.crunchyroll.com">ACCESSORIES</a></li>
+                                    </div>
+                                    <div className="wrap">
+                                        <li><a href="https://store.crunchyroll.com">APPAREL</a></li>
+                                    </div>
+                                    <div className="wrap">
+                                        <li><a href="https://store.crunchyroll.com">HOME GOODS</a></li>
+                                    </div>
+                                    <li><a href="https://store.crunchyroll.com">GIFT CARDS</a></li>
+                                </div>
                             </ul>
                         </li>
                         <div className="login">
