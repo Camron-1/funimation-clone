@@ -1,5 +1,5 @@
 import React from 'react';
-import './../App.css'; // Import your CSS styles
+import './../styles/App.css'; // Import your CSS styles
 interface HeaderBannerProps {
     bannerImage: string; // SVG media link source
     bannerLogo: string;

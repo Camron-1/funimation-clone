@@ -1,5 +1,5 @@
 import React from 'react';
-import './../App.css';
+import './../styles/App.css';
 
 // Define the PromoRibbon component
 const PromoRibbon: React.FC = () => {

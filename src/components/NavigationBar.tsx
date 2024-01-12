@@ -1,7 +1,8 @@
 // NavigationBar.tsx
 
-import React from 'react';
-import './../App.css';
+import React, { useState } from 'react';
+import './../styles/App.css';
+import NavigationBarItem from './NavigationBarItem';
 
 
 interface NavigationBarProps {
@@ -10,103 +11,51 @@ interface NavigationBarProps {
 }
 
 const NavigationBar: React.FC<NavigationBarProps> = ({ homeSvgImage, searchSvgImage }) => {
+    const [searchFunimation, setSearchFunimation] = useState(false);
+    const streamLinks = '[{"name": "All Titles", "url":"https://www.funimation.com/shows/"}, {"name": "Current Season", "url":"https://www.funimation.com/simuldubs/"}, {"name": "Schedule", "url":"https://www.funimation.com/schedule/"}]'
+    const discoverLinks = '[{"name": "Games", "url":"https://www.funimation.com/shows/"}, {"name": "News", "url":"https://www.funimation.com/simuldubs/"}, {"name": "Theatrical", "url":"https://www.funimation.com/schedule/"}]'
+    const shopLinks = '[{"name": "Home Video", "url":"https://www.funimation.com/shows/"}, {"name": "Pre-Orders", "url":"https://www.funimation.com/simuldubs/"}, {"name": "Figures & Collectibles", "url":"https://www.funimation.com/schedule/"}, {"name": "Accessories", "url":"https://www.funimation.com/shows/"}, {"name": "Apparel", "url":"https://www.funimation.com/simuldubs/"}, {"name": "Home Goods", "url":"https://www.funimation.com/schedule/"}, {"name": "Gift Cards", "url":"https://www.funimation.com/schedule/"}]'
     return (
-        <nav className="navigation-bar">
-            <div className="logo-container">
-                <img src={homeSvgImage} alt="Home Logo" className="logo" />
+
+        <nav className="
+            transition 
+            duration-500
+            ">
+
+            <div className="
+                md:px-8
+                flex 
+                items-center 
+                flex-row
+                transition 
+                duration-500
+            ">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img src={homeSvgImage} alt="Home Logo" className="logo" />
+                </a>
+
+                <div className="flex pl-20" />
+                <NavigationBarItem label="Stream" links={JSON.parse(streamLinks)} />
+                <NavigationBarItem label="Discover" links={JSON.parse(discoverLinks)} />
+                <NavigationBarItem label="Shop" links={JSON.parse(shopLinks)} />
+                <div />
+                <div className='className="flex flex-row ml-auto' />
+                <NavigationBarItem label="Log In" />
+                <button onClick={() => setSearchFunimation(searchFunimation)}>
+                    <img src={searchSvgImage} alt="Search" className="search-icon" />
+                </button>
+                <div />
             </div>
-            <ul className="menu-options">
-                <li className="menu-item-stream menu-item">Stream
-                    <ul className="submenu">
-                        <li className="submenu-item">All Titles</li>
-                        <li className="submenu-item">Current Season</li>
-                        <li className="submenu-item">Schedule</li>
-                        <li className="submenu-item">Discover</li>
-                    </ul>
-                </li>
-                <li className="menu-item-discover menu-item">Discover
-                    <ul className="submenu">
-                        <li className="submenu-item">Games</li>
-                        <li className="submenu-item">News</li>
-                        <li className="submenu-item">Theatrical</li>
-                    </ul>
-                </li>
-                <li className="menu-item-shop menu-item">Shop
-                    <ul className="submenu">
-                        <li className="submenu-item">Home Video</li>
-                        <li className="submenu-item">Pre-Orders</li>
-                        <li className="submenu-item">Figures & Collectibles</li>
-                        <li className="submenu-item">Accessories</li>
-                        <li className="submenu-item">Apparel</li>
-                        <li className="submenu-item">Home Goods</li>
-                        <li className="submenu-item">Gift Cards</li>
-                    </ul>
-                </li>
-                <li className="menu-item-login menu-item">Login</li>
-                <li className="menu-item-with-icon menu-item">
-                    <img src={searchSvgImage} alt="Search" className="logo" />
-
-                </li>
-            </ul>
-            <div className="navbar-fixed-top">
-                <div className="nav-bar-block">
-                    <ul className="nav-bar-menu">
-
-                        <li><a href="https://www.funimation.com/shows/">Stream</a>
-
-                            <ul>
-                                <div className='submenu'>
-                                    <div className="wrap">
-                                        <li><a href="https://www.funimation.com/shows/">ALL TITLES</a></li>
-                                    </div>
-                                    <div className="wrap">
-                                        <li><a href="https://www.funimation.com/simuldubs/">CURRENT SEASON</a></li>
-                                    </div>
-                                    <li><a href="https://www.funimation.com/schedule/">SCHEDULE</a></li>
-                                </div>
-
-                            </ul>
-                        </li>
-                        <li><a href="https://www.funimation.com/discover/">Discover</a>
-                            <ul>
-                                <div className='submenu'>
-                                    <li><a href="https://www.funimation.com/games/">GAMES</a></li>
-                                    <li><a href="https://www.crunchyroll.com/news">NEWS</a></li>
-                                    <li><a href="https://www.crunchyroll.com">THEATRICAL</a></li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li><a href="https://store.crunchyroll.com">Shop</a>
-                            <ul>
-                                <div className='submenu'>
-                                    <div className="wrap">
-                                        <li><a href="https://store.crunchyroll.com">HOME VIDEO</a></li>
-                                    </div>
-                                    <li><a href="https://store.crunchyroll.com/collections/all#/filter:ss_availability:Pre-Orders">PRE-ORDERS</a></li>
-                                    <div className="wrap">
-                                        <li><a href="https://store.crunchyroll.com">FIGURES & COLLECTIBLES</a></li>
-                                    </div>
-                                    <div className="wrap">
-                                        <li><a href="https://store.crunchyroll.com">ACCESSORIES</a></li>
-                                    </div>
-                                    <div className="wrap">
-                                        <li><a href="https://store.crunchyroll.com">APPAREL</a></li>
-                                    </div>
-                                    <div className="wrap">
-                                        <li><a href="https://store.crunchyroll.com">HOME GOODS</a></li>
-                                    </div>
-                                    <li><a href="https://store.crunchyroll.com">GIFT CARDS</a></li>
-                                </div>
-                            </ul>
-                        </li>
-                        <div className="login">
-                            <li><a href="https://www.funimation.com/log-in/">Login</a></li>
-                        </div>
-                    </ul>
-                </div>
-            </div >
+            <div className="flex flex-row items-center ">
+                <input type="text" id="search-bar-input" className="
+                block 
+                rounded-md
+                px-6
+                w-full
+                text-md" name="search" ng-model="search" required placeholder="Search Funimation" />
+                <button type="submit" className="bg-red-600 text-white hover:text-red-600 bg-white">Search</button>
+            </div>
         </nav >
-
     );
 };
 

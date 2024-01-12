@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
 import './components/PromoRibbon';
 import PromoRibbon from './components/PromoRibbon';
 import NavigationBar from './components/NavigationBar';
@@ -20,11 +20,13 @@ function App() {
 
   return (
     <div className="App">
-      <PromoRibbon/>
-      <NavigationBar homeSvgImage={funimationLogo} searchSvgImage={searchIcon} />
+      <header>
+        <PromoRibbon />
+        <NavigationBar homeSvgImage={funimationLogo} searchSvgImage={searchIcon} />
+      </header>
       <HeaderBanner bannerImage={bannerImage} bannerLogo={bannerLogo} bannerText={bannerText} buttonText={bannerButtonText} />
       <FreeTrialBanner mediaLink={subscriptionBannerLink} />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

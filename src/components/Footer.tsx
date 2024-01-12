@@ -1,6 +1,6 @@
 // Footer.tsx
 import React from 'react';
-import './../App.css';
+import './../styles/App.css';
 import instagramImage from "./../assets/instagram.svg";
 import facebookImage from "./../assets/facebook.svg";
 import twitterImage from "./../assets/twitter.svg"

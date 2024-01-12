@@ -1,5 +1,5 @@
 import React from 'react';
-import './../App.css'; // Import your CSS styles
+import './../styles/App.css'; // Import your CSS styles
 interface FreeTrialBannerProps {
     mediaLink: string; // SVG media link source
 }
