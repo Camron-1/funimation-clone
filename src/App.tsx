@@ -5,12 +5,16 @@ import './components/PromoRibbon';
 import PromoRibbon from './components/PromoRibbon';
 import NavigationBar from './components/NavigationBar';
 import funimationLogo from './assets/funimation-logo.svg';
-import bannerImage from './assets/one-piece-wallpaper.png';
-import bannerLogo from './assets/one-piece-wallpaper.png';
+import bannerLogo from './assets/one-piece-logo.png';
+
 import searchIcon from './assets/icon-search.svg';
 import FreeTrialBanner from './components/FreeTrialBanner';
 import Footer from './components/Footer';
 import HeaderBanner from './components/HeaderBanner';
+import Row from './components/Row';
+import request from './request';
+import { readConfigFile } from 'typescript';
+
 
 
 function App() {
@@ -23,10 +27,19 @@ function App() {
       <header>
         <PromoRibbon />
         <NavigationBar homeSvgImage={funimationLogo} searchSvgImage={searchIcon} />
+        <HeaderBanner bannerLogo={bannerLogo} bannerText={bannerText} buttonText={bannerButtonText} />
       </header>
-      <HeaderBanner bannerImage={bannerImage} bannerLogo={bannerLogo} bannerText={bannerText} buttonText={bannerButtonText} />
+      <Row title ="Continuing Simulcasts & New Dubs (Find More on Crunchyroll)" fetchUrl={request.fetchTrending} />
+      <Row title ="Round Up: Some Popular Shows of 2023" fetchUrl={request.fetchTrending}/>
+      <Row title ="For The Sci-Fi Crowd" fetchUrl={request.fetchNetflixOriginals }/>
+      <Row title ="Just Add Water" fetchUrl={request.fetchActionMovies}/>
+      {/* <Row title ="Eerie-sistable Anime" fetchUrl={request.fetchComedyMovies}/> */}
+      <Row title ="Shows To Binge Like a Demon" fetchUrl={request.fetchHorrorMovies}/>
+      <Row title ="Pirates, Bandits, and Outlaws!" fetchUrl={request.fetchRomanceMovies}/>
+      <Row title ="You've Gotta Be Kitten Me! Anime With Cattitude" fetchUrl={request.fetchDocumentaries}/>
       <FreeTrialBanner mediaLink={subscriptionBannerLink} />
       <Footer />
+      
     </div>
   );
 }

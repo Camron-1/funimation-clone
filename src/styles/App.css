@@ -1,4 +1,8 @@
-.App {
+* {
+  margin: 0;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -36,7 +40,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .promo-ribbon {
   background-color: #410099;
@@ -83,11 +87,11 @@
   margin-bottom: 20px;
 }
 
-.sub-banner {
+/* .sub-banner {
   font-size: 16px;
   max-width: 600px;
   margin: 0 auto 20px;
-}
+} */
 
 .start-trial-button {
   display: inline-block;

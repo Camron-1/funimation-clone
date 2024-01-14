@@ -14,7 +14,6 @@ interface NavigationBarItemProps {
 }
 
 const NavigationBarItem: React.FC<NavigationBarItemProps> = ({ label, links }) => {
-    console.log(links)
     return (
         <div className="
             uppercase

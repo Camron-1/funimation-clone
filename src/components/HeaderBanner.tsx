@@ -1,21 +1,22 @@
 import React from 'react';
-import './../styles/App.css'; // Import your CSS styles
+
 interface HeaderBannerProps {
-    bannerImage: string; // SVG media link source
-    bannerLogo: string;
-    bannerText: string;
-    buttonText: string;
+  bannerLogo: string;
+  bannerText: string;
+  buttonText: string;
 }
 
-const HeaderBanner: React.FC<HeaderBannerProps> = ({ bannerImage, bannerLogo , bannerText, buttonText }) => {
+const HeaderBanner: React.FC<HeaderBannerProps> = ({ bannerLogo, bannerText, buttonText }) => {
   return (
-    <div className="header-banner-container">
-            <div className="header-banner-image">
-                <img src={bannerLogo} alt="Banner Logo" className="logo" />
-            </div>
-        <div className="sub-banner">{bannerText}</div>
-        <a href="header-banner-button" className="header-banner-button">{buttonText}</a>
-    </div>
+    <header className="p-32 bg-cover bg-center bg-[url('./assets/one-piece-wallpaper.png')]">
+         <div>
+          <img className="h-40" src={bannerLogo} alt="Banner Logo" />
+          </div>
+
+          <div className="max-w-screen-sm text-white p-5 text-base ">{bannerText}</div>
+            <button className="bg-cyan-400 text-white font-bold w-64 h-14 rounded-xl uppercase">{buttonText}</button>
+          
+    </header>
   );
 };
 
