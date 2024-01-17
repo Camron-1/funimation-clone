@@ -12,9 +12,9 @@ import checkBox from "./../assets/checkmark.png"
 const Footer: React.FC = () => {
   return (
     <footer className="footer-container">
+
       <div className="footer-links">
         <div className="footer-section">
-          
           <a href="https://www.funimation.com/about-us/" target="https://www.funimation.com/about-us/" rel="noopener noreferrer">
             <h2>ABOUT FUNIMATION</h2>
           </a>
@@ -43,15 +43,15 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="footer-section">
-            
+
             <a href="https://privacyportal-cdn.onetrust.com/dsarwebform/d19e506f-1a64-463d-94e4-914dd635817d/b9eb997c-9ede-451b-8fd4-29891782a928.html" target="https://privacyportal-cdn.onetrust.com/dsarwebform/d19e506f-1a64-463d-94e4-914dd635817d/b9eb997c-9ede-451b-8fd4-29891782a928.html" rel="noopener noreferrer" >
               <h2>YOUR PRIVACY CHOICES</h2>
               <div className="picture-image">
-              <img 
-                src={checkBox} 
-                alt="Check Box"
+                <img
+                  src={checkBox}
+                  alt="Check Box"
                 />
-                </div>
+              </div>
             </a>
           </div>
 
@@ -67,56 +67,48 @@ const Footer: React.FC = () => {
             />
           </div>
         </div>
-        <div>
-          <div style={{ position: 'absolute', top: 990, right: 90, maxHeight: '1000px', overflow: 'auto' }}>
-            <a href="https://www.facebook.com/funimation" target="https://www.facebook.com/funimation" rel="noopener noreferrer">
-              <img
-                src={facebookImage}
-                alt="Instagram Logo Facebook Logo"
-                style={{ width: '20px', height: '50px', marginRight: '10px' }}
-              />
-            </a>
-            <a href="https://twitter.com/funimation" target="https://twitter.com/funimation" rel="noopener noreferrer">
-              <img
-                src={twitterImage}
-                alt="Twitter Logo"
-                style={{ width: '20px', height: '50px', marginRight: '10px' }}
-              />
-            </a>
-            <a href="https://www.youtube.com/user/FUNimation" target="https://www.youtube.com/user/FUNimation" rel="noopener noreferrer">
-              <img
-                src={youtubeImage}
-                alt="Youtube Logo"
-                style={{ width: '20px', height: '50px', marginRight: '10px' }}
-              />
-            </a>
-            <a href="https://www.instagram.com/funimation" target="https://www.instagram.com/funimation" rel="noopener noreferrer">
-              <img
-                src={instagramImage}
-                alt="Instagram Logo"
-                style={{ width: '20px', height: '50px', marginRight: '10px' }}
-              />
-            </a>
-            <a href="https://www.pinterest.com/funimation/" target="https://www.pinterest.com/funimation/nk" rel="noopener noreferrer">
-              <img
-                src={pinterestImage}
-                alt="Pinterest Logo"
-                style={{ width: '20px', height: '50px', marginRight: '10px' }}
-              />
-
-            </a>
-            <a href="https://www.tiktok.com/@funimation" target="https://www.tiktok.com/@funimation" rel="noopener noreferrer">
-              <img
-                src={tiktokImage}
-                alt="Tiktok Logo"
-                style={{ width: '18px', height: '50px', marginRight: '10px' }}
-              />
-            </a>
+        <div className=' flex justify-end space-x-3.5'>
+          <div  className=' flex justify-end'>
+          <a href="https://www.facebook.com/funimation" target="https://www.facebook.com/funimation" rel="noopener noreferrer">
+            <img
+              src={facebookImage}
+              alt="Instagram Logo Facebook Logo"
+            />
+          </a>
+          <a href="https://twitter.com/funimation" target="https://twitter.com/funimation" rel="noopener noreferrer">
+            <img
+              src={twitterImage}
+              alt="Twitter Logo"
+            />
+          </a>
+          <a href="https://www.youtube.com/user/FUNimation" target="https://www.youtube.com/user/FUNimation" rel="noopener noreferrer">
+            <img
+              src={youtubeImage}
+              alt="Youtube Logo"
+            />
+          </a>
+          <a href="https://www.instagram.com/funimation" target="https://www.instagram.com/funimation" rel="noopener noreferrer">
+            <img
+              src={instagramImage}
+              alt="Instagram Logo"
+            />
+          </a>
+          <a href="https://www.pinterest.com/funimation/" target="https://www.pinterest.com/funimation/nk" rel="noopener noreferrer">
+            <img
+              src={pinterestImage}
+              alt="Pinterest Logo"
+            />
+          </a>
+          <a href="https://www.tiktok.com/@funimation" target="https://www.tiktok.com/@funimation" rel="noopener noreferrer">
+            <img
+              src={tiktokImage}
+              alt="Tiktok Logo"
+            />
+          </a>
           </div>
-          <div className="crunchy-roll-title" style={{ position: 'relative', top: '-100px' }}>
+          <div className='flex justify-right'>
             <p style={{ fontSize: '12.5px' }}>© Crunchyroll, LLC. All Rights Reserved</p>
           </div>
-
         </div>
       </div>
     </footer>
