@@ -34,7 +34,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ homeSvgImage, searchSvgIm
                     <img src={homeSvgImage} alt="Home Logo" className="logo" />
                 </a>
 
-                <div className="flex pl-20" />
+                <div className="flex pl-20  " />
                 <NavigationBarItem label="Stream" links={JSON.parse(streamLinks)} />
                 <NavigationBarItem label="Discover" links={JSON.parse(discoverLinks)} />
                 <NavigationBarItem label="Shop" links={JSON.parse(shopLinks)} />

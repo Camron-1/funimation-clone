@@ -12,3 +12,23 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.nav-bar li ul
+{
+    display: none;
+}
+
+.nav-bar:hover li ul
+{
+    display: block;
+}
+
+.nav-bar-hidden
+{
+    display: block;
+}
+
+.nav-bar-hidden:hover
+{
+    display: hidden;
+}
