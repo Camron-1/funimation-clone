@@ -12,9 +12,8 @@ import checkBox from "./../assets/checkmark.png"
 const Footer: React.FC = () => {
   return (
     <footer className="footer-container">
-      <div className="footer-links">
+      <div className="flex justify-between">
         <div className="footer-section">
-          
           <a href="https://www.funimation.com/about-us/" target="https://www.funimation.com/about-us/" rel="noopener noreferrer">
             <h2>ABOUT FUNIMATION</h2>
           </a>
@@ -42,33 +41,33 @@ const Footer: React.FC = () => {
             </a>
           </div>
 
-          <div className="footer-section">
-            
-            <a href="https://privacyportal-cdn.onetrust.com/dsarwebform/d19e506f-1a64-463d-94e4-914dd635817d/b9eb997c-9ede-451b-8fd4-29891782a928.html" target="https://privacyportal-cdn.onetrust.com/dsarwebform/d19e506f-1a64-463d-94e4-914dd635817d/b9eb997c-9ede-451b-8fd4-29891782a928.html" rel="noopener noreferrer" >
-              <h2>YOUR PRIVACY CHOICES</h2>
-              <div className="picture-image">
-              <img 
-                src={checkBox} 
-                alt="Check Box"
+          <div className="flex">
+            <a href="https://privacyportal-cdn.onetrust.com/dsarwebform/d19e506f-1a64-463d-94e4-914dd635817d/b9eb997c-9ede-451b-8fd4-29891782a928.html"
+              target="https://privacyportal-cdn.onetrust.com/dsarwebform/d19e506f-1a64-463d-94e4-914dd635817d/b9eb997c-9ede-451b-8fd4-29891782a928.html"
+              rel="noopener noreferrer" >
+              <div className="flex">
+                <h2>YOUR PRIVACY CHOICES</h2>
+                <img className='max-w-14 px-2'
+                  src={checkBox}
+                  alt="Check Box"
                 />
-                </div>
+              </div>
             </a>
           </div>
-
           <div className="footer-section">
             <a href="https://www.crunchyroll.com/about/jobs/index.html" target="https://www.crunchyroll.com/about/jobs/" rel="noopener noreferrer">
               <h2>CAREERS</h2>
             </a>
           </div>
-          <div className="footer-section">
+          <div className="footer-section py-8">
             <img
               src={sonyPicture}
               alt="Sony Picture"
             />
           </div>
         </div>
-        <div>
-          <div style={{ position: 'absolute', top: 990, right: 90, maxHeight: '1000px', overflow: 'auto' }}>
+        <div className='grid justify-items-end'>
+          <div className='flex self-start justify-between'>
             <a href="https://www.facebook.com/funimation" target="https://www.facebook.com/funimation" rel="noopener noreferrer">
               <img
                 src={facebookImage}
@@ -113,10 +112,9 @@ const Footer: React.FC = () => {
               />
             </a>
           </div>
-          <div className="crunchy-roll-title" style={{ position: 'relative', top: '-100px' }}>
+          <div>
             <p style={{ fontSize: '12.5px' }}>© Crunchyroll, LLC. All Rights Reserved</p>
           </div>
-
         </div>
       </div>
     </footer>

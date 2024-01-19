@@ -29,17 +29,17 @@ function App() {
         <NavigationBar homeSvgImage={funimationLogo} searchSvgImage={searchIcon} />
         <HeaderBanner bannerLogo={bannerLogo} bannerText={bannerText} buttonText={bannerButtonText} />
       </header>
-      <Row title ="Continuing Simulcasts & New Dubs (Find More on Crunchyroll)" fetchUrl={request.fetchTrending} />
-      <Row title ="Round Up: Some Popular Shows of 2023" fetchUrl={request.fetchTrending}/>
-      <Row title ="For The Sci-Fi Crowd" fetchUrl={request.fetchNetflixOriginals }/>
-      <Row title ="Just Add Water" fetchUrl={request.fetchActionMovies}/>
-      {/* <Row title ="Eerie-sistable Anime" fetchUrl={request.fetchComedyMovies}/> */}
-      <Row title ="Shows To Binge Like a Demon" fetchUrl={request.fetchHorrorMovies}/>
-      <Row title ="Pirates, Bandits, and Outlaws!" fetchUrl={request.fetchRomanceMovies}/>
-      <Row title ="You've Gotta Be Kitten Me! Anime With Cattitude" fetchUrl={request.fetchDocumentaries}/>
+      <Row title="Continuing Simulcasts & New Dubs (Find More on Crunchyroll)" fetchUrl={request.fetchSimulcastsDubShows} />
+      <Row title="Round Up: Some Popular Shows of 2023" fetchUrl={request.fetchRoundUpShows} />
+      <Row title="For The Sci-Fi Crowd" fetchUrl={request.fetchSciFiShows} />
+      <Row title="Just Add Water" fetchUrl={request.fetchJustAddWaterShows} />
+      <Row title="Eerie-sistable Anime" fetchUrl={request.fetchEerieShows} />
+      <Row title="Shows To Binge Like a Demon" fetchUrl={request.fetchDemonShows} />
+      <Row title="Pirates, Bandits, and Outlaws!" fetchUrl={request.fetchPirateShows} />
+      <Row title="You've Gotta Be Kitten Me! Anime With Cattitude" fetchUrl={request.fetchKittenShows} />
       <FreeTrialBanner mediaLink={subscriptionBannerLink} />
       <Footer />
-      
+
     </div>
   );
 }
