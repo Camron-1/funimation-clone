@@ -67,49 +67,50 @@ const Footer: React.FC = () => {
             />
           </div>
         </div>
-        <div className=' flex justify-end space-x-3.5'>
-          <div  className=' flex justify-end'>
-          <a href="https://www.facebook.com/funimation" target="https://www.facebook.com/funimation" rel="noopener noreferrer">
-            <img
-              src={facebookImage}
-              alt="Instagram Logo Facebook Logo"
-            />
-          </a>
-          <a href="https://twitter.com/funimation" target="https://twitter.com/funimation" rel="noopener noreferrer">
-            <img
-              src={twitterImage}
-              alt="Twitter Logo"
-            />
-          </a>
-          <a href="https://www.youtube.com/user/FUNimation" target="https://www.youtube.com/user/FUNimation" rel="noopener noreferrer">
-            <img
-              src={youtubeImage}
-              alt="Youtube Logo"
-            />
-          </a>
-          <a href="https://www.instagram.com/funimation" target="https://www.instagram.com/funimation" rel="noopener noreferrer">
-            <img
-              src={instagramImage}
-              alt="Instagram Logo"
-            />
-          </a>
-          <a href="https://www.pinterest.com/funimation/" target="https://www.pinterest.com/funimation/nk" rel="noopener noreferrer">
-            <img
-              src={pinterestImage}
-              alt="Pinterest Logo"
-            />
-          </a>
-          <a href="https://www.tiktok.com/@funimation" target="https://www.tiktok.com/@funimation" rel="noopener noreferrer">
-            <img
-              src={tiktokImage}
-              alt="Tiktok Logo"
-            />
-          </a>
+        <div className='flex grid object-right'>
+          <div className='flex space-x-3.5'>
+            <a href="https://www.facebook.com/funimation" target="https://www.facebook.com/funimation" rel="noopener noreferrer">
+              <img
+                src={facebookImage}
+                alt="Instagram Logo Facebook Logo"
+              />
+            </a>
+            <a href="https://twitter.com/funimation" target="https://twitter.com/funimation" rel="noopener noreferrer">
+              <img
+                src={twitterImage}
+                alt="Twitter Logo"
+              />
+            </a>
+            <a href="https://www.youtube.com/user/FUNimation" target="https://www.youtube.com/user/FUNimation" rel="noopener noreferrer">
+              <img
+                src={youtubeImage}
+                alt="Youtube Logo"
+              />
+            </a>
+            <a href="https://www.instagram.com/funimation" target="https://www.instagram.com/funimation" rel="noopener noreferrer">
+              <img
+                src={instagramImage}
+                alt="Instagram Logo"
+              />
+            </a>
+            <a href="https://www.pinterest.com/funimation/" target="https://www.pinterest.com/funimation/nk" rel="noopener noreferrer">
+              <img
+                src={pinterestImage}
+                alt="Pinterest Logo"
+              />
+            </a>
+            <a href="https://www.tiktok.com/@funimation" target="https://www.tiktok.com/@funimation" rel="noopener noreferrer">
+              <img
+                src={tiktokImage}
+                alt="Tiktok Logo"
+              />
+            </a>
           </div>
-          <div className='flex justify-right'>
+          <div className='flex'>
             <p style={{ fontSize: '12.5px' }}>© Crunchyroll, LLC. All Rights Reserved</p>
           </div>
         </div>
+
       </div>
     </footer>
   );
