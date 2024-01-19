@@ -12,8 +12,7 @@ import checkBox from "./../assets/checkmark.png"
 const Footer: React.FC = () => {
   return (
     <footer className="footer-container">
-
-      <div className="footer-links">
+      <div className="flex justify-between">
         <div className="footer-section">
           <a href="https://www.funimation.com/about-us/" target="https://www.funimation.com/about-us/" rel="noopener noreferrer">
             <h2>ABOUT FUNIMATION</h2>
@@ -42,25 +41,25 @@ const Footer: React.FC = () => {
             </a>
           </div>
 
-          <div className="footer-section">
-
-            <a href="https://privacyportal-cdn.onetrust.com/dsarwebform/d19e506f-1a64-463d-94e4-914dd635817d/b9eb997c-9ede-451b-8fd4-29891782a928.html" target="https://privacyportal-cdn.onetrust.com/dsarwebform/d19e506f-1a64-463d-94e4-914dd635817d/b9eb997c-9ede-451b-8fd4-29891782a928.html" rel="noopener noreferrer" >
-              <h2>YOUR PRIVACY CHOICES</h2>
-              <div className="picture-image">
-                <img
+          <div className="flex">
+            <a href="https://privacyportal-cdn.onetrust.com/dsarwebform/d19e506f-1a64-463d-94e4-914dd635817d/b9eb997c-9ede-451b-8fd4-29891782a928.html"
+              target="https://privacyportal-cdn.onetrust.com/dsarwebform/d19e506f-1a64-463d-94e4-914dd635817d/b9eb997c-9ede-451b-8fd4-29891782a928.html"
+              rel="noopener noreferrer" >
+              <div className="flex">
+                <h2>YOUR PRIVACY CHOICES</h2>
+                <img className='max-w-14 px-2'
                   src={checkBox}
                   alt="Check Box"
                 />
               </div>
             </a>
           </div>
-
           <div className="footer-section">
             <a href="https://www.crunchyroll.com/about/jobs/index.html" target="https://www.crunchyroll.com/about/jobs/" rel="noopener noreferrer">
               <h2>CAREERS</h2>
             </a>
           </div>
-          <div className="footer-section">
+          <div className="footer-section py-8">
             <img
               src={sonyPicture}
               alt="Sony Picture"

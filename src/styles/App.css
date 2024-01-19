@@ -120,18 +120,10 @@
 
 .footer-section {
   max-width: 200px;
-  margin-bottom: 10px;
 }
 
 .footer-section h2 {
-  font-size: 15px;
-  margin-bottom: 10px;
-
-}
-
-.footer-section p {
   font-size: 14px;
-  line-height: 1.5;
 
 }
 
@@ -140,25 +132,6 @@
   /* Adjust link color as needed */
   text-decoration: none;
   white-space: nowrap;
-}
-
-.crunchy-roll-title {
-  margin-left: 900px;
-  /* Adjust the margin as needed */
-  white-space: nowrap;
-  height: 50
-}
-
-.picture-image img {
-  width: 50px;
-  height: 30px;
-  position: relative;
-  top: -35px;
-  margin-right: -50px;
-  float: right;
-
-
-
 }
 
 
